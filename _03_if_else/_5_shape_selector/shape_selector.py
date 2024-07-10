@@ -9,9 +9,15 @@ if __name__ == '__main__':
     window.withdraw()
     
     # Make a new turtle
-    
+    jturtle = turtle.Turtle()
     # Ask the user what shape they want to draw and store it in a variable
-    
+    shape = simpledialog.askstring(title='Which Shape', prompt='would you like to draw a circle square or triangle')
     # Draw the shape requested by the user using if-elif-else statements
-    
+    if shape == square:
+        for i in range(4):
+            jturtle.forward(100)
+            jturtle.right(90)
+    if shape == circle:
+        jturtle.circle(20)
+    else
     # Call the turtle .done() method
