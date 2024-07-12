@@ -25,5 +25,18 @@ canvas.create_text(100, 50, text="text goes here", font=("Arial", 16))
 '''
 # Put your code below
 
+word = 'idk'
+texty = 20
+
+for i in range(4):
+
+    #canvas.goto (50, i * 50)
+    if i < 3 :
+        word = 'ice cream'
+    else:
+        word = 'banana'
+    canvas.create_text(100, texty, text=word, font=("Arial", 16))
+    texty = texty + 10
+
 
 root.mainloop()

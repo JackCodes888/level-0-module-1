@@ -17,7 +17,7 @@ def mouse_pressed(event):
     x = event.x
     y = event.y
 
-    points_circle = [x , y , x   , y - 50]
+    points_circle = [x + 100, y, x - 100  , y + 100]
     # This defines the x and y coordinated of all three points
     # of a triangle
     points = [x + 50, y, x - 50, y , x , y - 50]
